@@ -1,0 +1,22 @@
+<%= render 'navbar' %>
+
+<div class="card">
+<h1><%= @flat.name %></h1>
+<p><%= @flat.address %></p>
+</div>
+
+
+<div class="card">
+<h2>A bit more about this flat...</h2>
+<p><%= @flat.description %></p>
+</div>
+
+
+<div class="Card">
+  <h2>Book this place!</h2>
+  <%= form_with do |form| %>
+    <p>From: <%= form.date_field :born_on %></p>
+    <p>To: <%= form.date_field :born_on %></p>
+  <% end %>
+  <button type="button" class="btn btn-success">Book</button>
+</div>

@@ -1,0 +1,10 @@
+<%= render 'navbar' %>
+
+
+<div class="container">
+  <div class="row">
+    <% @flats.each do |flat| %>
+      <%= render 'flat', flat: flat %>
+    <% end %>
+  </div>
+</div>
